@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support — Trivia Daily Apps</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f8f8f8;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 48px 24px 40px;
+    }
+    header h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    header p {
+      color: #aaa;
+      font-size: 1rem;
+    }
+
+    .apps {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      max-width: 900px;
+      margin: 48px auto;
+      padding: 0 24px;
+    }
+
+    .app-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 28px;
+      flex: 1 1 240px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      border-top: 5px solid #ccc;
+    }
+    .app-card.pop   { border-top-color: #ec4899; }
+    .app-card.rap   { border-top-color: #f59e0b; }
+    .app-card.rock  { border-top-color: #ef4444; }
+
+    .app-card .icon { font-size: 2.4rem; margin-bottom: 12px; }
+    .app-card h2    { font-size: 1.2rem; font-weight: 800; margin-bottom: 6px; }
+    .app-card p     { font-size: 0.9rem; color: #555; }
+
+    .faq {
+      max-width: 900px;
+      margin: 0 auto 48px;
+      padding: 0 24px;
+    }
+    .faq h2 {
+      font-size: 1.3rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+      color: #111;
+    }
+    .faq-item {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .faq-item h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 6px; }
+    .faq-item p  { font-size: 0.9rem; color: #555; }
+
+    .contact {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 48px 24px;
+    }
+    .contact h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: 12px; }
+    .contact p  { color: #aaa; font-size: 0.95rem; margin-bottom: 20px; }
+    .contact a {
+      display: inline-block;
+      background: #ec4899;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 14px 32px;
+      border-radius: 50px;
+      transition: opacity 0.2s;
+    }
+    .contact a:hover { opacity: 0.85; }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 0.8rem;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.5rem; }
+      .apps { gap: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🎵 Trivia Daily Apps</h1>
+    <p>Support &amp; Help — by Crowley Apps</p>
+  </header>
+
+  <section class="apps">
+    <div class="app-card pop">
+      <div class="icon">🫧</div>
+      <h2>Pop Trivia Daily</h2>
+      <p>Daily pop music trivia across five decades — 80s through 2020s. Five questions, one shot, new challenge every day.</p>
+    </div>
+    <div class="app-card rap">
+      <div class="icon">🎤</div>
+      <h2>Rap Trivia Daily</h2>
+      <p>Daily hip-hop trivia spanning eight rap genres. Old school, East Coast, West Coast, and more. Do you really know rap?</p>
+    </div>
+    <div class="app-card rock">
+      <div class="icon">🎸</div>
+      <h2>Rock Trivia Daily</h2>
+      <p>Daily rock music trivia across eight genres — 80s rock, hair metal, grunge, progressive, and more. Prove you bleed rock.</p>
+    </div>
+  </section>
+
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <h3>Why can I only play once per day?</h3>
+      <p>Each app is designed as a daily challenge — the same five questions go out to every player at midnight. One shot keeps it fair and the streak meaningful.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>My streak disappeared — what happened?</h3>
+      <p>Streaks require playing on consecutive calendar days. If you miss a day, the streak resets. Make sure to play before midnight in your local time zone.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>The app isn't loading / crashing on launch.</h3>
+      <p>Try closing the app fully and reopening it. If the issue persists, delete and reinstall the app — your streak and history are stored locally but a reinstall will reset them. Contact us if the problem continues.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>I think a question or answer is wrong.</h3>
+      <p>We take accuracy seriously. Please email us with the question text and the app name and we'll review it right away.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I share my score?</h3>
+      <p>After completing the daily quiz, tap <strong>Share Results</strong> on the results screen. This copies your emoji score card and opens the iOS share sheet so you can send it anywhere.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Are there ads or in-app purchases?</h3>
+      <p>No ads, no in-app purchases, no subscriptions. All three apps are completely free.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What data does the app collect?</h3>
+      <p>Nothing. All data (streaks, scores, history) is stored locally on your device only. No accounts, no tracking, no servers.</p>
+    </div>
+
+  </section>
+
+  <section class="contact">
+    <h2>Still need help?</h2>
+    <p>Email us and we'll get back to you within 24 hours.</p>
+    <a href="mailto:mikeybc14@gmail.com">mikeybc14@gmail.com</a>
+  </section>
+
+  <footer>
+    &copy; 2026 Crowley Apps. All rights reserved.
+  </footer>
+
+</body>
+</html>
